@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cat_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Picture of a cat"
+        android:src="@drawable/cat" />
+
+    <TextView
+        android:id="@+id/line_one"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/cat_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:background="#d33"
+        android:text="@string/line_one"
+        android:textColor="#3dd" />
+
+    <TextView
+        android:id="@+id/line_two"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/cat_image"
+        android:layout_below="@id/line_one"
+        android:background="#3d3"
+        android:text="Yes, it&apos;s a cat."
+        android:textColor="#d3d" />
+
+</RelativeLayout>
